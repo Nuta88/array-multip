@@ -8,7 +8,7 @@ function myltipElemArrays(arrOne, arrTwo) {
 
 	}
 	return receivedArr;
-}
+} 
 
 function printNewMyltipArr() {
 	var inputArrOne = [ [ 2, 3, 4 ], [ 1, 9, 7 ], [ 8, 8, 5 ] ];
