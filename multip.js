@@ -1,18 +1,29 @@
 function myltipElemArrays(arrOne, arrTwo) {
 	var receivedArr = new Array(arrOne.length);
-	for (var i = 0; (i < arrOne.length) && (i < arrTwo.length); i++) {
+	for (var i = 0; i < arrOne.length; i++) {
 		receivedArr[i] = new Array(arrOne.length);
-		for (var j = 0; (j < arrOne[i].length)&& (j < arrTwo[j].length); j++) {
+		for (var j = 0; j < arrOne[i].length; j++) {
 			receivedArr[i][j] = arrOne[i][j] * arrTwo[j][i];
 		}
 
 	}
 	return receivedArr;
-} 
+}
+
+function isEqualRowsToColumnsArrays(arrOne, arrTwo) {
+	for (var row = 0; row < arrOne.length; row++) {
+		for (var col = 0; col < arrTwo[row].length; col++) {
+		}
+		if (arrOne[row].length !== col) {
+			document.write("false");
+		}
+	}
+}
 
 function printNewMyltipArr() {
 	var inputArrOne = [ [ 2, 3, 4 ], [ 1, 9, 7 ], [ 8, 8, 5 ] ];
 	var inputArrTwo = [ [ 5, 7, 5 ], [ 3, 2, 1 ], [ 8, 1, 1 ] ];
+	isEqualRowsToColumnsArrays(inputArrOne, inputArrTwo);
 	var printArr = myltipElemArrays(inputArrOne, inputArrTwo);
 	document.write(printArr);
 }
