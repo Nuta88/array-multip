@@ -11,6 +11,7 @@ function myltipElemArrays(arrOne, arrTwo) {
 	}
 	document.write("Arrays aren't equal. Please enter equal arrays");
 }
+
 function isEqualRowsToColumnsArrays(arrOne, arrTwo) {
 	if (arrOne.length !== arrTwo.length) {
 		return false;
@@ -22,6 +23,7 @@ function isEqualRowsToColumnsArrays(arrOne, arrTwo) {
 	}
 	return true;
 }
+
 function testingFuncIsEqual() {
 	var inputArrOne = [ [ 2, 3, 4 ], [ 1, 9, 7 ], [ 8, 8, 5 ] ];
 	var inputArrTwo = [ [ 5, 7, 5 ], [ 3, 2, 1 ], [ 8, 1, 1 ] ];
@@ -31,6 +33,7 @@ function testingFuncIsEqual() {
 		document.write("Arrays aren't equal");
 	}
 }
+
 function testArraysOnMultip() {
 	var inputArrOne = [ [ 2, 3, 4 ], [ 1, 9, 7 ], [ 8, 8, 5 ] ];
 	var inputArrTwo = [ [ 5, 7, 5 ], [ 3, 2, 1 ], [ 8, 1, 1 ] ];
